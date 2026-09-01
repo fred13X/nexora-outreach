@@ -1,5 +1,9 @@
 export default {
   async fetch(request, env) {
-    return env.ASSETS.fetch(request);
+    return new Response("Nexora Outreach is online!", {
+      headers: {
+        "content-type": "text/plain"
+      }
+    });
   }
 };
